@@ -1,0 +1,30 @@
+{
+
+  "dependencies": {
+    "body-parser": "~1.9.0",
+    "express": "~4.9.5",
+    "express-namespace": "~0.1.1",
+    "express-session": "~1.8.2",
+    "connect-mongo":"~0.4.1",
+    "mongodb":"~1.4.18",
+	  "node-debug":"~0.1.0"
+	
+  },
+  "preferGlobal": "true",
+  "main": "lib/gymserver",
+  "scripts": {
+    
+  },
+  "devDependencies": {},
+  "readme": "Really Readme",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": ""
+  },
+  "_id": "gymserver@1.0.0",
+  "dist": {
+    "shasum": "0f46f92ff4164eea26bd731f4338b7d4651bb964"
+  },
+  "_from": "gymserver@",
+  "_resolved": ""
+}

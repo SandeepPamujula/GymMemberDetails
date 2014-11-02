@@ -1,0 +1,16 @@
+
+1) install mongoDB 2.6:
+	
+
+2) Install Node js
+	a) go to gym folder in command line
+	b) run cmd: npm install
+
+3) launch gym server to connect db 
+	a) run cmd: mongod --dbpath e:\mongodb (note: mongodb folder,empty, should be present)
+	b) go to gym folder in command line
+	b) run cmd: node gym-server.js
+
+
+4) launch gym client page on browser 
+	http://localhost:3333/gym-client.html

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<!--
+written by : sandeeppamujula@gmail.com
+Use of this source code is governed by a BSD-style license.
+-->
+    <head>
+        
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <title> HSR Fitness member details.</title>
+        
+        
+        <script type="text/javascript" src="gym-client.js"></script>
+        <link rel="stylesheet" href="./css/styles.css" />
+
+    </head>
+
+    <body>
+        <div class="pageTitle">
+            <h1> Member Details. </h1>
+        </div>
+        <div>
+
+        
+  <!-- <ul class="formFields"> -->
+<div class="aboutYouForm">
+
+    <!-- <span class="bold cursive blue floatRightCommon">Search  </span> -->
+    <div class="memberPadding"> </div>
+    
+    <div class="topPadding memberPadding rightPadding">
+        
+        <span><input id="idSearchBox" class=" twentySixPercentWidthInput rightPadding floatRightCommon normalField cursive" onkeypress="handleKeyPress(event,this.form)" onfocus = "if (this.value==' Enter mobile number to see member details') this.value = ''" type="text" value=" Enter mobile number to see member details"> </span>
+
+
+    </div>
+    <div class="memberPadding"> </div>
+    <div class="memberPadding"> </div>
+    <div class="memberPadding">
+
+        <span class="bold cursive blue ">Name    : </span><input id="idMemberName" name="memberName" class="quaterWidthInput normalField " placeholder="Member Name" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="100" autocomplete="off"/>  
+     </div>
+
+       <div class="memberPadding">
+
+        <span class="bold cursive blue">Contact  : </span><input id="idContact" name="ContactNumber" class="quaterWidthInput normalField" placeholder="Contact Number" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="10" autocomplete="off"/>     
+     </div>
+
+     <div class="memberPadding">
+           
+        <span class="bold cursive blue">DOJ : </span><input id="idDOJ" name="DOJ" class="normalField"  type="date" /> <span style="color:grey"> (Date of Joining) </span>
+
+     </div>
+
+     <div class="memberPadding blue">
+
+         <span class="bold cursive blue">Amount : </span><input id="idAmount" class="normalField" placeholder="Amount Paid" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="6" autocomplete="off"/> 
+
+    </div>
+
+    <div class="memberPadding">    
+    <span class="bold cursive blue"> Package Type: </span>
+                <select id="idPackageType">
+                    <option>1 month</option>
+                    <option>3 months</option>
+                    <option>6 months</option>
+                    <option>12 months</option>
+                </select>
+
+    <span class=" paddingBetweenItems bold cursive blue">Package End Date: </span><input id="idPED" class="normalField"  type="date" /></span>
+
+    </div>
+
+     <div class="memberPadding">
+                 
+         <form name="GenderForm"> 
+            <span class="bold cursive blue">Age  : </span><span>
+                <input id="idMemberAge"  class="DigitInput normalField" placeholder="" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="2" autocomplete="off"/>
+            </span>
+            <span class="paddingBetweenItems bold cursive blue"> Gender: </span> <tr>
+            <span> 
+               <input type="radio" name="sex" value="M">Male <tr> <input type="radio" name="sex" value="F">Female
+            </span>
+
+            <div style="padding-top: 20px;">
+                <span class="bold cursive blue ">Food Habit  : </span> <tr> <span> 
+                                   
+                    <input type="radio" name="FoodHabit" value="Veg">Veg <tr> 
+                    <input type="radio" name="FoodHabit" value="Non Veg">Non Veg
+                </span>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <div class="memberPadding">
+
+         <span class="bold cursive blue">Medical  : </span><input id="idMedicalIssue" class="quaterWidthInput normalField" placeholder="Medical Issues(if any)" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="1024" autocomplete="off"/> 
+
+    </div>
+
+    <div class="memberPadding">
+        <span class="bold cursive blue">Height  : </span><span>
+            <input id="idHeight"  class="DigitInput normalField" placeholder="" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+        <span class="bold cursive blue memberLeftPadding">Weight  : </span><span>
+            <input id="idWeight"  class="DigitInput normalField" placeholder="" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+        <span class="bold cursive blue memberLeftPadding">BMI  : </span><span>
+            <input id="idBMI"  class="DigitInput normalField" placeholder="" autocorrect="off" autocorrectutocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+    </div>
+
+    <div class="memberPadding">
+        <span class="bold cursive blue">Muscle Mass(%)  : </span><span>
+            <input id="idMuscleMass"  class="DigitInput normalField" placeholder="" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+        <span class="bold cursive blue memberLeftPadding">Viceral Fat  : </span><span>
+            <input id="idViceralFat"  class="DigitInput normalField" placeholder="" autocorrect="off" autocorrectutocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+    </div>
+
+    <div class="memberPadding">
+        <span class="bold cursive blue">Body Fat(%)  : </span><span>
+            <input id="idBodyFat"  class="DigitInput normalField" placeholder="" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+        <span class="bold cursive blue memberLeftPadding">TBW  : </span><span>
+            <input id="idTBW"  class="DigitInput normalField" placeholder="" autocorrect="off" autocorrectutocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/>
+        </span>
+
+    </div>
+    
+    <div class="memberPadding">
+
+         <span class="bold cursive blue">Bone Weight  : </span>
+         <input id="idBoneWeight" class=" normalField" placeholder="(Avg Estimated Bone Mass)" autocorrect="off" autocapitalize="off" type="text" value="" maxlength="4" autocomplete="off"/> 
+
+    </div>
+    <div class="bold cursive blue" style="padding-top: 20px;padding-left: 30%;">Body Composition Measurements</div>
+    <div class="memberPadding">
+
+    <span class="bold cursive blue ">Date </span><span style="padding:40px"> </span>
+    <span >
+            <td><input type="date"  class="tenPrecentWidthInput" id="idDateone" </td>
+            <td><input type="date" class="tenPrecentWidthInput" id="idDatetwo" /></td>
+            <td><input type="date" id="idDatethree" class="tenPrecentWidthInput" /></td>
+            <td><input type="date" id="idDatefour" class="tenPrecentWidthInput" /></td>
+    </span>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Neck </span><span style="padding:40px"> </span>
+            <td><input type="text" id="idNeckone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idNecktwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idNeckthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idNeckfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Chest </span><span style="padding:40px"> </span>
+            <td><input type="text" id="idChestone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idChesttwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idChestthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idChestfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Shoulders </span><span style="padding:22px"> </span>
+            <td><input type="text" id="idShouldersone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idShoulderstwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idShouldersthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idShouldersfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Biceps(Normal) </span><span style="padding:3px"> </span>
+            <td><input type="text" id="idBicepsNormalone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsNormaltwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsNormalthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsNormalfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Biceps(Flex) </span><span style="padding:15px"> </span>
+            <td><input type="text" id="idBicepsFlexone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsFlextwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsFlexthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idBicepsFlexfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Upper Abs </span><span style="padding:20px"> </span>
+            <td><input type="text" id="idUpperAbsone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idUpperAbstwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idUpperAbsthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idUpperAbsfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Lower Abs </span><span style="padding:20px"> </span>
+            <td><input type="text" id="idLowerAbsone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idLowerAbstwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idLowerAbsthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idLowerAbsfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+
+    <span class="bold cursive blue">Waist </span><span style="padding:38px"> </span>
+            <td><input type="text" id="idWaistone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idWaisttwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idWaistthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idWaistfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Hips </span><span style="padding:43px"> </span>
+            <td><input type="text" id="idHipsone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idHipstwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idHipsthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idHipsfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+
+    <span class="bold cursive blue">Thigh </span><span style="padding:38px"> </span>
+            <td><input type="text" id="idThighone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idThightwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idThighthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idThighfour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div class="tablePadding">
+        <span class="bold cursive blue">Calf </span><span style="padding:44px"> </span>
+            <td><input type="text" id="idCalfone" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idCalftwo" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idCalfthree" class="tenPrecentWidthInput"/></td>
+            <td><input type="text" id="idCalffour" class="tenPrecentWidthInput"/></td>
+    </div>
+    <div style="padding-top: 10px;padding-left: 75%;">
+        <!-- <br><input type="submit" value="Submit" class="submitButton"> </br> -->
+         <input class="submitButton" type="button" onclick="submitMemberDetails()" value="Submit form">
+        <br> </br>
+    </div>
+
+  </div>
+
+    </body>
+</html>
