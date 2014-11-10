@@ -14,3 +14,7 @@
 
 4) launch gym client page on browser 
 	http://localhost:3333/gym-client.html
+
+
+5) Troubleshoot mongoDB
+	mongod --dbpath e:\mongodb --repair --repairpath e:\mongodb0
